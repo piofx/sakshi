@@ -3,6 +3,10 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0;
+}
 .left_content,
 .right_content {
   font-family: "Playfair Display", serif;
@@ -162,6 +166,12 @@ a:hover {
 .color_hover a:hover {
   color: #fd7e14 !important;
 }
+/*    news style   */
+.news_img_padding {
+  border: 2px solid #cac3c3;
+  padding: 1.5px;
+}
+
 /* meadia queries*/
 
 @media screen and (max-width: 992px) {
@@ -173,10 +183,18 @@ a:hover {
   }
 }
 @media screen and (max-width: 448px) {
+  .header_logo {
+    width: 230px;
+  }
   .nav-text {
     font-size: 15px;
   }
   .nav-icon {
     width: 26px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .left_content .bussiness_market .col-md-6 {
+    border-right: none !important;
   }
 }
